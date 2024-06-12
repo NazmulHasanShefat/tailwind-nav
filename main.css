@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.sub-ul{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events:none;
+    height: 0;
+    transition:.3s;
+    }
+.open{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: painted;
+    height: 190px;
+    }
+@media screen and (min-width:668px) {
+    .main-list:hover{
+        .sub-ul{
+            visibility: visible;
+            opacity: 1;
+            pointer-events: painted;
+            height: max-content;
+            animation: myanime .3s ease-in-out forwards;
+            }
+        }
+        @keyframes myanime {
+            0%{
+               opacity: 1;
+               transform:translateX(-50%) translateY(40px);
+            }
+            100%{
+              opacity: 1;
+              transform:translateX(-50%) translateY(0);
+            }
+        }
+        .open{
+            visibility: visible;
+            opacity: 1;
+            pointer-events: painted;
+            height: 160px;
+        }
+}

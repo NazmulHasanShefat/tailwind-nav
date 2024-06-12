@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>tailwind navber</title>
+</head>
+<body class="bg-bg-color">
+  <header class="w-full">
+    <nav class="mainmenu w-full h-max sm:flex sm:justify-between">
+        <div class="nav-brand bg-blue-500 text-white font-bold w-full h-max flex justify-between px-5 py-2 mb-2 sm:mb-0 sm:py-3">
+            <div class="brand-name">Hellow world</div>
+            <div class="menu-icon sm:hidden">
+                <div class="toggle-btn"><i class="fa-solid fa-bars text-2xl text-white"></i></div>
+            </div>
+        </div>
+        <div class="nav-list w-full h-max flex justify-center sm:justify-end relative sm:static">
+            <ul class="bg-blue-500 w-3/4 sm:w-full sm:h-max absolute sm:static sm:translate-x-0 sm:flex sm:justify-end sm:pr-10">
+                <li class="main-list sm:inline-block text-center relative"><a href="#" class="text-white py-3 hover:bg-blue-900 px-10 sm:px-5 w-full text-center flex justify-between items-center">Home <i class="fa-solid fa-plus text-sm sm:pl-2" id="plus-icon-m"></i></a>
+                <ul class="sub-ul relative sm:absolute w-full sm:w-max bg-blue-400 sm:left-[50%] sm:translate-x-[-50%]">
+                    <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">Prodact</a></li>
+                    <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">contact</a></li>
+                    <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">sells</a></li>
+                    <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">more</a></li>
+                </ul>
+                </li>
+                <li class="sm:inline-block text-center"><a href="#" class="flex justify-start items-center text-white py-3 hover:bg-blue-900 px-10 sm:px-5">contact</a></li>
+                <li class="sm:inline-block text-center"><a href="#" class="flex justify-start items-center text-white py-3 hover:bg-blue-900 px-10 sm:px-5">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+    <script src="./script.js"></script>
+</body>
+</html>
