@@ -16,13 +16,17 @@
   <header class="w-full">
     <nav class="mainmenu w-full h-max sm:flex sm:justify-between">
         <div class="nav-brand bg-blue-500 text-white font-bold w-full h-max flex justify-between px-5 py-2 mb-2 sm:mb-0 sm:py-3">
-            <div class="brand-name">Hellow world</div>
+            <div class="brand-name w-2/5 flex justify-center items-center"><img src="./logo.png" alt="" class="w-img-width h-[24px]"></div>
             <div class="menu-icon sm:hidden">
-                <div class="toggle-btn"><i class="fa-solid fa-bars text-2xl text-white"></i></div>
+                <div class="toggle-btn py-2">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
             </div>
         </div>
         <div class="nav-list w-full h-max flex justify-center sm:justify-end relative sm:static">
-            <ul class="bg-blue-500 w-3/4 sm:w-full sm:h-max absolute sm:static sm:translate-x-0 sm:flex sm:justify-end sm:pr-10">
+            <ul class="all-ul-nav bg-blue-500 w-3/4 sm:w-full sm:h-max absolute sm:static sm:translate-x-0 sm:flex sm:justify-end sm:pr-10">
                 <li class="main-list sm:inline-block text-center relative"><a href="#" class="text-white py-3 hover:bg-blue-900 px-10 sm:px-5 w-full text-center flex justify-between items-center">Home <i class="fa-solid fa-plus text-sm sm:pl-2" id="plus-icon-m"></i></a>
                 <ul class="sub-ul relative sm:absolute w-full sm:w-max bg-blue-400 sm:left-[50%] sm:translate-x-[-50%]">
                     <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">Prodact</a></li>
@@ -33,10 +37,38 @@
                 </li>
                 <li class="sm:inline-block text-center"><a href="#" class="flex justify-start items-center text-white py-3 hover:bg-blue-900 px-10 sm:px-5">contact</a></li>
                 <li class="sm:inline-block text-center"><a href="#" class="flex justify-start items-center text-white py-3 hover:bg-blue-900 px-10 sm:px-5">Help</a></li>
+                <li class="sm:inline-block text-center"><a href="#" class="flex justify-start items-center text-white py-3 hover:bg-blue-900 px-10 sm:px-5">Help</a></li>
+                <li class="main-list2 sm:inline-block text-center relative"><a href="#" class="text-white py-3 hover:bg-blue-900 px-10 sm:px-5 w-full text-center flex justify-between items-center">Home <i class="fa-solid fa-plus text-sm sm:pl-2" id="plus-icon-m"></i></a>
+                    <ul class="sub-ul2 relative sm:absolute w-full sm:w-max bg-blue-400 sm:left-[50%] sm:translate-x-[-50%]">
+                        <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">Prodact</a></li>
+                        <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">contact</a></li>
+                        <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">sells</a></li>
+                        <li class="inline"><a href="#" class="block py-3 sm:px-6 sm:py-2 hover:bg-blue-800 text-white">more</a></li>
+                    </ul>
+                    </li>
+                <li class="sm:inline-block text-center"><a href="#" class="flex justify-start items-center text-white py-3 hover:bg-blue-900 px-10 sm:px-5">Help</a></li>
             </ul>
         </div>
     </nav>
   </header>
-    <script src="./script.js"></script>
+  <main>
+    <section class="w-full h-80 flex justify-center items-center mt-20 sm:mt-40">
+        <div class="home-titel w-full sm:w-3/4 h-max text-center font-extrabold">
+            <h1 class="text-4xl sm:text-5xl text-white">Rapidly build modern websites without ever leaving your HTML</h1>
+        <div class="description-hero px-5 py-3 sm:px-20 text-white font-sans">
+            <h2 class="font-normal">A utility-first CSS framework packed with classes like <span class="text-span-color">flex, pt-4, text-center and rotate-90</span>that can be composed to build any design, directly in your markup.</h2>
+        </div>
+        <div class="getStart-button w-full">
+            <button class="w-80 rounded-xl bg-hero-btn-color hover:bg-hero-btn-hover text-white py-3">Get Start</button>
+        </div>
+        <div class="search-box w-full">
+           <div class="quice-search-box w-4/5 h-10 border-blue-100">
+            <input type="text" class="w-3/6 mt-5 h-10 border-none outline-none " placeholder="Quick search...">
+           </div>
+        </div>
+        </div>
+    </section>
+  </main>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>

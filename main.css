@@ -6,7 +6,14 @@
     padding:0;
     box-sizing: border-box;
 }
-.sub-ul{
+.all-ul-nav{
+    transform: translateX(-120%);
+    transition: .3s;
+}
+.open_all{
+    transform: translateX(0);
+}
+.sub-ul, .sub-ul2{
     visibility: hidden;
     opacity: 0;
     pointer-events:none;
@@ -18,10 +25,42 @@
     opacity: 1;
     pointer-events: painted;
     height: 190px;
+}
+    .toggle-btn{
+        height: 40px;
+        width: 30px;
+        cursor: pointer;
     }
+    .bar{
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 8px;
+        transition: .3s;
+        transform-origin: left;
+    }
+    /* #bar1{
+        margin-top: 10px;
+    } */
+    /* #bar3{
+        transform: translateX(-1px) rotate(-45deg);
+    }  */
+    /* #bar2{
+        opacity: 0;
+    } */
+
 @media screen and (min-width:668px) {
     .main-list:hover{
         .sub-ul{
+            visibility: visible;
+            opacity: 1;
+            pointer-events: painted;
+            height: max-content;
+            animation: myanime .3s ease-in-out forwards;
+            }
+        }
+    .main-list2:hover{
+        .sub-ul2{
             visibility: visible;
             opacity: 1;
             pointer-events: painted;
